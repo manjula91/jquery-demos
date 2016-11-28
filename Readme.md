@@ -1,7 +1,7 @@
 
 ## How to use this starter pack
 
-![Quill Labs Logo](https://github.com/amite/vue-2.1-basic-starter-kit/raw/master/screenshots/quill-logomark.png)
+![Quill Labs Logo](https://github.com/amite/vue-2.1-basic-starter-kit/raw/master/screenshots/quill-logomark-small.png)
 
 Node modules are pre-installed so just do `git clone https://github.com/amite/vue-2.1-basic-starter-kit.git`
 
