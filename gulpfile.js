@@ -8,11 +8,11 @@ gulp.task('serve', function () {
     // Serve files from the root of this project
     browserSync.init({
         server: {
-            baseDir: "./src"
+            baseDir: "./"
         }
     });
 
     // add browserSync.reload to the tasks array to make
     // all browsers reload after tasks are complete.
-    gulp.watch(["./src/*.html", "./src/css/*.css", "./src/js/*.js"]).on("change", reload);
+    gulp.watch(["./*.html", "./assets/css/*.css", "./assets/js/*.js"]).on("change", reload);
 });
