@@ -1,0 +1,33 @@
+<template>
+  <style>
+    
+  </style>
+  <button>
+    Hello ben
+  </button>
+</template>
+
+<script>
+  (function(){
+    var template = document.currentScript.ownerDocument.querySelector('template');
+
+    var proto = Object.create(HTMLElement.prototype);
+
+    proto.createdCallback = function() {
+      var clone = document.importNode(template.content, true);
+
+      this.createShadowRoot().appendChild(clone);
+    };
+
+    proto.attachedCallback = function() {
+
+    };
+
+    proto.attributeChangedCallback = function(attrName, oldVal, newVal) {
+
+    };
+
+    document.registerElement('bens-button', { prototype: proto});
+
+  }());
+</script>
