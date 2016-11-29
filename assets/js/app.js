@@ -3,5 +3,7 @@ var app = new Vue({
   data: {
     message: 'Hello Vue!',
     time: new Date(),
+    intro: 'This is a <em>great</em> time to be alive',
+    paid: false
   }
 });

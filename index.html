@@ -14,9 +14,9 @@
 <div class="container">
   <div class="surface" id="app">
     <h1>{{ message }}</h1>
-    <span v-text="time">
-      
-    </span>
+    <span v-text="time"></span>
+    <p v-html="intro"></p>
+    <p v-show="paid">Thank you for your payment</p>
   </div>
   <footer>
     <p class="mute">Made with ❤️ by Quill Labs</p>
