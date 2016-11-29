@@ -1,9 +1,18 @@
 /*@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);*/
 
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html,body { height:100%; }
+
+a {
+  text-decoration: none;
+}
+
 body {
   background: #eceff1;
   font-family: 'arial', sans-serif;
-  height: 60vh;
   color: #aba7a7;
   line-height: 1.8em;
 }
