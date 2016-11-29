@@ -5,7 +5,6 @@
   <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
   
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./node_modules/normalize-css/normalize.css">
   <link rel="stylesheet" type="text/css" href="assets/css/app.css">
 </head>
@@ -13,7 +12,15 @@
 
 <div class="container">
   <div class="surface" id="app">
-    
+    <img src="/assets/img/popcorn.png" class="header">
+    <ul id="movie-list">
+      <li v-for="movie in movies">
+        <h3>{{ movie.title }}</h3>
+        <img v-bind:src=" '/assets/img/movies/' + movie.poster" width="100px"/>
+        <p>{{ movie.desc }}</p>
+      </li>
+    </ul>
+
   <footer>
     <p class="mute">Made with ❤️ by Quill Labs</p>
   </footer>
