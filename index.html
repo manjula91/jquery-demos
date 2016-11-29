@@ -13,7 +13,8 @@
 
 <div class="container">
   <div class="surface" id="app">
-    <h1>{{ message }}</h1>
+    <h1 v-bind:title="message">{{ message }}</h1>
+    <img v-bind:src="url" v-bind:alt="title" v-bind:title="title">
   </div>
   <footer>
     <p class="mute">Made with ❤️ by Quill Labs</p>
