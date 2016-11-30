@@ -13,10 +13,13 @@
 
 <div class="container">
   <div class="surface" id="app">
-
-    <footer>
-      <p class="mute">Made with ❤️ by Quill Labs</p>
-    </footer>
+    <i v-show="purchased" class="fa fa-check" aria-hidden="true"></i>
+    <figure>
+      <img v-bind:class="{ purchased: purchased}" src="/assets/img/products/package.png">
+    </figure>
+    
+    <button v-bind:disabled="purchased" v-on:click="purchase">Buy Now</button>
+    
   </div><!-- end surface -->
 </div>
 
