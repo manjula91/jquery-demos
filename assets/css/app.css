@@ -1,4 +1,4 @@
-@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+/*@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);*/
 
 *, *::after, *::before {
   box-sizing: border-box;
@@ -63,6 +63,10 @@ h1 {
   opacity: 0.2;
 }
 
+.surface img.logo {
+  padding-bottom: 1.5em;
+}
+
 .surface {
   text-align: center;
   margin-bottom: 100px;
@@ -82,6 +86,10 @@ h1 {
   background: #0e8dbc;
 }
 
+.surface.transparent {
+  background: transparent;
+  box-shadow: none;
+}
 
 .surface h1 {
   color: #444;
@@ -114,6 +122,41 @@ h1 {
                0 20px 20px rgba(0,0,0,.15);
 }
 
+.surface .list-item {  
+  height: 80px;
+  width: 100%;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.surface .item-content {
+  border-radius: 4px;
+  color: rgb(153, 153, 153);
+  line-height: 80px;
+  padding-left: 32px;
+  font-size: 24px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0,0,0,0.2) 0px 1px 2px 0px;
+}
+
+.surface .item-content img {
+  position: relative;
+  top: 10px;
+  border-radius: 100%;
+  margin-right: 0.5em;
+  border: 1px solid white;
+  box-shadow: 1px 1px 2px #e3e3e3;
+  transition: transform 0.3s ease-in-out;;
+}
+
+.surface .item-content img:hover {
+  transform: scale(1.2);
+}
+
+.surface .item-content span:last-child {
+  font-size: 0.5em;
+  color: #c7c7c7;
+}
 
 #movie-list {
   padding-top: 1.2em;

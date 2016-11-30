@@ -12,13 +12,20 @@
 <body>
 
 <div class="container">
-  <div class="surface" id="app">
-    <i v-show="purchased" class="fa fa-check" aria-hidden="true"></i>
-    <figure>
-      <img v-bind:class="{ purchased: purchased}" src="/assets/img/products/package.png">
-    </figure>
-    
-    <button v-bind:disabled="purchased" v-on:click="purchase">Buy Now</button>
+  <div class="surface transparent" id="app">
+  <img class="logo" src="/assets/img/uber.png">
+  <label for="weight">Location: {{ radius }} miles</label>
+  <input v-model="radius" type="range" id="weight">
+  <br>
+
+  <div v-for="user in users" class="list-item">
+    <div class="item-content">
+      <img v-bind:src="user.image" width="35px" />
+      <span>{{ user.first_name }}</span>
+      <span>{{ user.location }}</span>
+    </div>
+  </div>
+
     
   </div><!-- end surface -->
 </div>
